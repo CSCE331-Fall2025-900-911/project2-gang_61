@@ -4,3 +4,4 @@ SELECT
 FROM orders o
 GROUP BY week_start
 ORDER BY week_start;
+-- this generates num sales per week.  ~40 weeks
