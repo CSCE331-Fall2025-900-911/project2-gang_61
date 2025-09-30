@@ -17,8 +17,8 @@ with open("products.csv", newline="", encoding="utf-8") as file:
 
 # Generate items for orders
 items_data = []
-for item_id in range(1, 1001):  # 1000 items
-    order_id = random.randint(1, 4000)  # random order
+for item_id in range(1, 350001):  # 350k items
+    order_id = random.randint(1, 700000)  # random order
     product = random.choice(products)
     sugar_level = random.choice(["none", "light", "medium", "extra"]) if product["category"] == "Drink" else ""
     ice_level = random.choice(["none", "light", "medium", "extra"]) if product["category"] == "Drink" else ""

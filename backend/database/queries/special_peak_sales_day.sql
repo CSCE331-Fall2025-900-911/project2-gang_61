@@ -1,8 +1,9 @@
 SELECT 
-    DATE_TRUNC('day', o.order_time) AS day,
-    SUM(i.price) AS total_sales
+    o.order_time::date AS day, 
+    SUM(i.price) AS daily_total
 FROM orders o
-JOIN items i ON o.order_id = i.order_id
+JOIN items i ON i.order_id = o.order_id
 GROUP BY day
-ORDER BY total_sales DESC
+ORDER BY daily_total DESC
 LIMIT 10;
+--summing prices from items table
