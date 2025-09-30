@@ -1,9 +1,0 @@
-order_id,member_id,employee_id,order_time,order_status
-1,1,2,4:55,in progress
-2,,4,2:22,in progress
-3,7,6,3:21,completed
-4,,1,2:15,completed
-5,2,9,2:47,completed
-6,5,8,4:05,completed
-7,,10,3:02,completed
-8,4,7,2:59,completed
