@@ -1,23 +1,23 @@
-product_id,product_name,category,price,stock
-1,Classic Milk Tea,Drink,4.5,120
-2,Taro Milk Tea,Drink,4.75,100
-3,Matcha Milk Tea,Drink,5.0,90
-4,Wintermelon Tea,Drink,4.25,80
-5,Thai Tea,Drink,4.75,85
-6,Strawberry Green Tea,Drink,4.5,70
-7,Honey Lemonade,Drink,4.0,60
-8,Brown Sugar Boba Milk,Drink,5.25,95
-9,Boba (Add-on),Add-on,0.75,200
-10,Tapioka (Add-on),Add-on,0.75,150
-11,Lychee Jelly (Add-on),Add-on,0.75,130
-12,Aloe Vera (Add-on),Add-on,0.75,100
-13,Red Bean (Add-on),Add-on,0.75,80
-14,Boba (Bowl),Topping,2.0,30
-15,Tapioka (Bowl),Topping,2.0,25
-16,Large Cup,Supply,0.0,500
-17,Medium Cup,Supply,0.0,400
-18,Small Cup,Supply,0.0,300
-19,Straw,Supply,0.0,1000
-20,Sealing Film,Supply,0.0,800
-21,Sharetea Tote Bag,Merchandise,8.0,15
-22,Reusable Cup,Merchandise,10.0,20
+product_id,product_name,category,price,cost,stock
+1,Classic Milk Tea,Drink,4.5,1.5,120
+2,Taro Milk Tea,Drink,4.75,1.6,100
+3,Matcha Milk Tea,Drink,5.0,1.8,90
+4,Wintermelon Tea,Drink,4.25,1.4,80
+5,Thai Tea,Drink,4.75,1.6,85
+6,Strawberry Green Tea,Drink,4.5,1.7,70
+7,Honey Lemonade,Drink,4.0,1.3,60
+8,Brown Sugar Boba Milk,Drink,5.25,2.0,95
+9,Boba (Add-on),Add-on,0.75,0.2,200
+10,Tapioka (Add-on),Add-on,0.75,0.2,150
+11,Lychee Jelly (Add-on),Add-on,0.75,0.25,130
+12,Aloe Vera (Add-on),Add-on,0.75,0.25,100
+13,Red Bean (Add-on),Add-on,0.75,0.2,80
+14,Boba (Bowl),Topping,2.0,0.75,30
+15,Tapioka (Bowl),Topping,2.0,0.75,25
+16,Large Cup,Supply,0.0,0.1,500
+17,Medium Cup,Supply,0.0,0.08,400
+18,Small Cup,Supply,0.0,0.05,300
+19,Straw,Supply,0.0,0.02,1000
+20,Sealing Film,Supply,0.0,0.03,800
+21,Sharetea Tote Bag,Merchandise,8.0,4.5,15
+22,Reusable Cup,Merchandise,10.0,6.0,20

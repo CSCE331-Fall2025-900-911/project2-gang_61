@@ -52,36 +52,40 @@ with open("employees.csv", mode="w", newline="", encoding="utf-8") as file:
 
 products_data = [
     # Drinks
-    {"product_name": "Classic Milk Tea", "category": "Drink", "price": 4.50, "stock": 120},
-    {"product_name": "Taro Milk Tea", "category": "Drink", "price": 4.75, "stock": 100},
-    {"product_name": "Matcha Milk Tea", "category": "Drink", "price": 5.00, "stock": 90},
-    {"product_name": "Wintermelon Tea", "category": "Drink", "price": 4.25, "stock": 80},
-    {"product_name": "Thai Tea", "category": "Drink", "price": 4.75, "stock": 85},
-    {"product_name": "Strawberry Green Tea", "category": "Drink", "price": 4.50, "stock": 70},
-    {"product_name": "Honey Lemonade", "category": "Drink", "price": 4.00, "stock": 60},
-    {"product_name": "Brown Sugar Boba Milk", "category": "Drink", "price": 5.25, "stock": 95},
+    {"product_name": "Classic Milk Tea", "category": "Drink", "price": 4.50, "cost": 1.50, "stock": 120},
+    {"product_name": "Taro Milk Tea", "category": "Drink", "price": 4.75, "cost": 1.60, "stock": 100},
+    {"product_name": "Matcha Milk Tea", "category": "Drink", "price": 5.00, "cost": 1.80, "stock": 90},
+    {"product_name": "Wintermelon Tea", "category": "Drink", "price": 4.25, "cost": 1.40, "stock": 80},
+    {"product_name": "Thai Tea", "category": "Drink", "price": 4.75, "cost": 1.60, "stock": 85},
+    {"product_name": "Strawberry Green Tea", "category": "Drink", "price": 4.50, "cost": 1.70, "stock": 70},
+    {"product_name": "Honey Lemonade", "category": "Drink", "price": 4.00, "cost": 1.30, "stock": 60},
+    {"product_name": "Brown Sugar Boba Milk", "category": "Drink", "price": 5.25, "cost": 2.00, "stock": 95},
+
     # Add-ons
-    {"product_name": "Boba (Add-on)", "category": "Add-on", "price": 0.75, "stock": 200},
-    {"product_name": "Tapioka (Add-on)", "category": "Add-on", "price": 0.75, "stock": 150},
-    {"product_name": "Lychee Jelly (Add-on)", "category": "Add-on", "price": 0.75, "stock": 130},
-    {"product_name": "Aloe Vera (Add-on)", "category": "Add-on", "price": 0.75, "stock": 100},
-    {"product_name": "Red Bean (Add-on)", "category": "Add-on", "price": 0.75, "stock": 80},
+    {"product_name": "Boba (Add-on)", "category": "Add-on", "price": 0.75, "cost": 0.20, "stock": 200},
+    {"product_name": "Tapioka (Add-on)", "category": "Add-on", "price": 0.75, "cost": 0.20, "stock": 150},
+    {"product_name": "Lychee Jelly (Add-on)", "category": "Add-on", "price": 0.75, "cost": 0.25, "stock": 130},
+    {"product_name": "Aloe Vera (Add-on)", "category": "Add-on", "price": 0.75, "cost": 0.25, "stock": 100},
+    {"product_name": "Red Bean (Add-on)", "category": "Add-on", "price": 0.75, "cost": 0.20, "stock": 80},
+
     # Toppings sold separately
-    {"product_name": "Boba (Bowl)", "category": "Topping", "price": 2.00, "stock": 30},
-    {"product_name": "Tapioka (Bowl)", "category": "Topping", "price": 2.00, "stock": 25},
+    {"product_name": "Boba (Bowl)", "category": "Topping", "price": 2.00, "cost": 0.75, "stock": 30},
+    {"product_name": "Tapioka (Bowl)", "category": "Topping", "price": 2.00, "cost": 0.75, "stock": 25},
+
     # Supplies
-    {"product_name": "Large Cup", "category": "Supply", "price": 0.00, "stock": 500},
-    {"product_name": "Medium Cup", "category": "Supply", "price": 0.00, "stock": 400},
-    {"product_name": "Small Cup", "category": "Supply", "price": 0.00, "stock": 300},
-    {"product_name": "Straw", "category": "Supply", "price": 0.00, "stock": 1000},
-    {"product_name": "Sealing Film", "category": "Supply", "price": 0.00, "stock": 800},
+    {"product_name": "Large Cup", "category": "Supply", "price": 0.00, "cost": 0.10, "stock": 500},
+    {"product_name": "Medium Cup", "category": "Supply", "price": 0.00, "cost": 0.08, "stock": 400},
+    {"product_name": "Small Cup", "category": "Supply", "price": 0.00, "cost": 0.05, "stock": 300},
+    {"product_name": "Straw", "category": "Supply", "price": 0.00, "cost": 0.02, "stock": 1000},
+    {"product_name": "Sealing Film", "category": "Supply", "price": 0.00, "cost": 0.03, "stock": 800},
+
     # Merchandise
-    {"product_name": "Sharetea Tote Bag", "category": "Merchandise", "price": 8.00, "stock": 15},
-    {"product_name": "Reusable Cup", "category": "Merchandise", "price": 10.00, "stock": 20},
+    {"product_name": "Sharetea Tote Bag", "category": "Merchandise", "price": 8.00, "cost": 4.50, "stock": 15},
+    {"product_name": "Reusable Cup", "category": "Merchandise", "price": 10.00, "cost": 6.00, "stock": 20},
 ]
 
 with open("products.csv", mode="w", newline="", encoding="utf-8") as file:
-    writer = csv.DictWriter(file, fieldnames=["product_id", "product_name", "category", "price", "stock"])
+    writer = csv.DictWriter(file, fieldnames=["product_id", "product_name", "category", "price", "cost", "stock"])
     writer.writeheader()
     for idx, product in enumerate(products_data, start=1):
         row = {
@@ -89,14 +93,15 @@ with open("products.csv", mode="w", newline="", encoding="utf-8") as file:
             "product_name": product["product_name"],
             "category": product["category"],
             "price": product["price"],
+            "cost" : product["cost"],
             "stock": product["stock"]
         }
         writer.writerow(row)
 
 orders_data = [
     # Only "in progress" and "completed" orders, about 2 "in progress"
-    {"member_id": 1, "employee_id": 2, "order_time": "", "order_status": "in progress"},
-    {"member_id": "", "employee_id": 4, "order_time": "", "order_status": "in progress"},
+    {"member_id": 1, "employee_id": 2, "order_time": "4:55", "order_status": "in progress"},
+    {"member_id": "", "employee_id": 4, "order_time": "2:22", "order_status": "in progress"},
     {"member_id": 7, "employee_id": 6, "order_time": "3:21", "order_status": "completed"},
     {"member_id": "", "employee_id": 1, "order_time": "2:15", "order_status": "completed"},
     {"member_id": 2, "employee_id": 9, "order_time": "2:47", "order_status": "completed"},
