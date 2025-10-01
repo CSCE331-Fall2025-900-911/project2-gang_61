@@ -33,9 +33,14 @@ with open("orders.csv", mode="w", newline="", encoding="utf-8") as f:
             # if this day is a peak day, then increase volume
             multiplier = 3 if order_date.date() in peak_days else 1
             for _ in range(multiplier):
+                random_num = random.randint(1, 100)
+                if random_num <= 40:
+                    member_id = random.randint(1, 500)
+                else:
+                    member_id = 0
                 writer.writerow({
                     "order_id": order_id,
-                    "member_id": random.randint(1, 500),
+                    "member_id": member_id,
                     "employee_id": random.randint(1, 50),
                     "order_time": order_date.strftime("%Y-%m-%d %H:%M:%S"),
                     "order_status": random.choice(["Completed"]*3 + ["Cancelled"])
