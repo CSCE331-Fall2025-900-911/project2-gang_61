@@ -1,0 +1,24 @@
+product_id,product_name,category,price,cost,stock
+1,Classic Milk Tea,Drink,4.5,1.5,120
+2,Taro Milk Tea,Drink,4.75,1.6,100
+3,Matcha Milk Tea,Drink,5.0,1.8,90
+4,Wintermelon Tea,Drink,4.25,1.4,80
+5,Thai Tea,Drink,4.75,1.6,85
+6,Strawberry Green Tea,Drink,4.5,1.7,70
+7,Honey Lemonade,Drink,4.0,1.3,60
+8,Passionfruit Tea,Drink,4.25,1.4,75
+9,Brown Sugar Boba Milk Tea,Drink,5.25,2.0,95
+10,Boba (Add-on),Add-on,0.75,0.2,200
+11,Mango Boba (Add-on),Add-on,0.75,0.25,150
+12,Lychee Jelly (Add-on),Add-on,0.75,0.25,130
+13,Aloe Vera (Add-on),Add-on,0.75,0.25,100
+14,Red Bean (Add-on),Add-on,0.75,0.2,80
+15,Boba (Bowl),Topping,2.0,0.75,30
+16,Mango Boba (Bowl),Topping,2.0,0.85,25
+17,Large Cup,Supply,0.0,0.1,500
+18,Medium Cup,Supply,0.0,0.08,400
+19,Small Cup,Supply,0.0,0.05,300
+20,Straw,Supply,0.0,0.02,1000
+21,Sealing Film,Supply,0.0,0.03,800
+22,Sharetea Tote Bag,Merchandise,8.0,4.5,15
+23,Reusable Cup,Merchandise,10.0,6.0,20
