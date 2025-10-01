@@ -4,6 +4,8 @@ from faker import Faker
 
 fake = Faker()
 
+
+# TODO : member_id field should be 0 / NULL if the members are not part of the system/table
 with open("members.csv", mode="w", newline="", encoding="utf-8") as f:
     fieldnames = ["member_id", "member_name", "contact_info", "reward_points"]
     writer = csv.DictWriter(f, fieldnames=fieldnames)

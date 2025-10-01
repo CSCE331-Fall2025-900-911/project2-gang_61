@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 
 weeks = 39
 orders_per_week = 19000  # ~750k sales total
+# military-time style due to our data type 'timestamp' for order_time
 business_start_hour = 11
 business_end_hour = 22
 

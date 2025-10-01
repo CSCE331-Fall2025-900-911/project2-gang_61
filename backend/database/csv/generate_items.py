@@ -16,6 +16,7 @@ with open("products.csv", newline="", encoding="utf-8") as file:
         })
 
 # Generate items for orders
+# TODO: combine item id or group items together : e.g. Boba milk tea (with all its ingredients) under one "item"
 items_data = []
 for item_id in range(1, 350001):  # 350k items
     order_id = random.randint(1, 700000)  # random order
